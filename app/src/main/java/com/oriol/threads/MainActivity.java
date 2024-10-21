@@ -108,8 +108,8 @@ class Conexio implements Runnable{
                 try {
                     JSONObject json = new JSONObject(resultat);
                     String ip = json.getString("ip");
-                    String ciutat = json.getString("country");
-                    String text = "IP: " + ip+", ciutat: "+ciutat;
+                    String pais = json.getString("country");
+                    String text = "IP: " + ip+", pais: "+pais;
                     Toast.makeText(context,text,duration).show();
 
                 } catch (JSONException e) {
